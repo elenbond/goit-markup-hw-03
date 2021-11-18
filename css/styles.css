@@ -18,6 +18,26 @@
 /* основной цвет фона #E5E5E5 */
 /* вторичный цвет фона #F5F4FA */
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
 /* body */
 body {
   background-color: var(--background-color);
@@ -33,12 +53,23 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-right: 95px;
+  margin-top: -8px;
+  margin-bottom: -7px;
 }
 .logo-hdr {
   color: var(--accent-color);
 }
 .logo.studio {
   color: var(--third-text-color);
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 32px 215px;
+
+  border-bottom: 1px solid #ececec;
 }
 /* Site navigation */
 .site-nav .link.current {
@@ -51,12 +82,23 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  padding-right: 50px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
 .logo:focus {
   color: var(--accent-color);
 }
+.site-nav {
+  display: flex;
+  padding: 0;
+  margin-right: 330px;
+}
+
+/* .site-nav.list .link:nth-last-child(1) {
+  padding: 0;
+} */
+
 /* Contacts */
 .contacts-header {
   font-weight: 500;
@@ -65,6 +107,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style-type: none;
+  display: flex;
 }
 .contacts-header .link {
   color: var(--primary-text-color);
@@ -74,11 +117,23 @@ body {
 .contacts-header .link:focus {
   color: var(--accent-color);
 }
-
+.hdr-nav {
+  display: flex;
+  align-items: center;
+}
+.hdr-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+/* ------------------------------------ */
 /* Hero */
 .hero {
   color: var(--second-text-color);
   background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -87,14 +142,26 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* -------------------------------------------- */
 /* Section */
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+/* ------------------------------------------ */
 /* Features */
 .features .title {
   color: var(--title-text-color);
@@ -106,6 +173,43 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+.features {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.features-list {
+  display: block;
+  text-align: start;
+  margin-right: 30px;
+}
+.features-list .paragraphe {
+  margin-top: 10px;
+}
+.features-list:last-child {
+  margin-right: 0;
+}
+.section.ftrs {
+  padding-bottom: 0;
+}
+.section-title.hidden {
+  position: absolute;
+}
+/* -------------------------------------------- */
+/* Photos */
+.photos {
+  display: flex;
+}
+.photos-list {
+  display: block;
+  text-align: start;
+  margin-right: 30px;
+}
+.photos-list:last-child {
+  margin-right: 0;
+}
+/* -------------------------------------------- */
 /* Team */
 .team-list .title {
   color: var(--title-text-color);
@@ -122,6 +226,9 @@ body {
 }
 .team .person-card {
   background-color: var(--second-text-color);
+}
+.team-list {
+  display: flex;
 }
 /* Portfolio */
 /* Categories */
@@ -144,6 +251,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+/* -------------------------------------------- */
 /* Button */
 .button {
   font-family: inherit;
@@ -155,6 +263,9 @@ body {
   line-height: 1.63;
   border: none;
   border-radius: 4px;
+  display: block;
+  padding: 6px 22px;
+  margin: auto;
 }
 .button.primary {
   background-color: var(--accent-color);
@@ -164,11 +275,17 @@ body {
   background-color: var(--second-background-color);
   color: var(--title-text-color);
 }
+.button.primary.hr {
+  display: block;
+  padding: 10px 32px;
+  margin: auto;
+}
 .button-list .button:hover,
 .button-list .button:focus {
   color: var(--second-text-color);
   background-color: var(--accent-color);
 }
+
 /* Footer */
 .page-footer {
   background-color: var(--hero-background-color);
@@ -215,3 +332,16 @@ body {
 .contacts-footer {
   list-style-type: none;
 }
+.container {
+  align-items: center;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+/* .button-list {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
