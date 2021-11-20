@@ -197,8 +197,8 @@ body {
 
 .features-list {
   display: flex;
-  flex-direction: column; 
-  
+  flex-direction: column;
+  text-align: start;
   
   align-content: flex-start;
   margin-right: 30px;
