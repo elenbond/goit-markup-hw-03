@@ -96,6 +96,7 @@ body {
   display: block;
   align-content: center;
   margin-right: 50px;
+  padding: 5px 0;
 }
 .sn-link:last-child {
   margin-right: 0;
@@ -125,6 +126,7 @@ body {
   display: block;
   align-items: flex-end;
   margin-right: 50px;
+  padding: 5px 0;
 }
 .cont-link:last-child {
   margin-right: 0;
@@ -132,7 +134,6 @@ body {
 .hdr-nav {
   display: flex;
   align-items: center;
-  margin-right: 330px;
 }
 .hdr-container {
   display: flex;
@@ -170,6 +171,8 @@ body {
 }
 
 .section {
+  padding-right: 215px;
+  padding-left: 215px;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -183,18 +186,21 @@ body {
   text-transform: uppercase;
 }
 .features .paragraphe {
+  
   font-size: 14px;
   line-height: 1.71;
 }
 .features {
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
 .features-list {
-  display: block;
-  text-align: start;
+  display: flex;
+  flex-direction: column; 
+  
+  
+  align-content: flex-start;
   margin-right: 30px;
   width: 270px;
 }
@@ -202,6 +208,7 @@ body {
   margin-top: 10px;
 }
 .features-list:last-child {
+  width: 300px;
   margin-right: 0;
 }
 .section.ftrs {
@@ -219,6 +226,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* .container.adv-container {
+  justify-content: space-around;
+  margin-right: 0;
+  margin-left: 0;
+} */
 /* -------------------------------------------- */
 /* Photos */
 .photos {
@@ -265,23 +277,48 @@ body {
 /* Portfolio */
 /* Categories */
 .categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
   color: var(--title-text-color);
   list-style-type: none;
 }
 .categories .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+/* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
 .categories .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
 }
 .categories .paragraphe {
   font-size: 16px;
   line-height: 1.87;
+}
+.ct-link {
+  margin-left: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  flex-basis: calc((100% - 90px) / 3);
+}
+.category-card {
+  display: block;
+  text-align: start;
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 /* -------------------------------------------- */
 /* Button */
@@ -317,6 +354,18 @@ body {
   color: var(--second-text-color);
   background-color: var(--accent-color);
 }
+/* .btn-container {
+  display: flex;
+
+} */
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.button.ct {
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
 
 /* Footer */
 .page-footer {
@@ -328,18 +377,17 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-.logo-ftr {
   color: var(--accent-color);
   margin-bottom: 20px;
 }
+
 .logo-ftr.studio {
   color: var(--second-text-color);
 }
 .address {
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 20px;
+  
 }
 .address .address-link {
   color: var(--second-text-color);
@@ -353,6 +401,10 @@ body {
 .ftr-link:last-child {
   margin-bottom: 0;
 }
+/* .contacts-footer {
+  display: flex;
+  justify-content: center;
+} */
 .contacts-footer .link {
   color: var(--ftr-contacts-color);
   font-style: normal;
@@ -364,8 +416,12 @@ body {
 .address-link:focus {
   color: var(--accent-color);
 }
-.ftr-container {
-  padding: 61px 215px;
+.container.ftr-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding-bottom: 61px;
+  padding-top: 61px;
 }
 /* list-type */
 .list,
@@ -377,11 +433,11 @@ body {
   list-style-type: none;
 }
 .container {
-  align-items: center;
+  
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 215px;
+  margin: 0 auto;
 }
 /* .button-list {
   display: block;
@@ -389,3 +445,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 } */
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
