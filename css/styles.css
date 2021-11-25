@@ -9,6 +9,7 @@
   --main-background-color: #e5e5e5;
   --second-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
+  --first-border-color: #eeeeee;
 }
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -54,11 +55,12 @@ body {
   line-height: 1.19;
   text-decoration: none;
   margin-right: 95px;
-  margin-top: -8px;
-  margin-bottom: -7px;
+ 
 }
 .logo-hdr {
   color: var(--accent-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo.studio {
   color: var(--third-text-color);
@@ -67,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 215px;
+  
   border-bottom: 1px solid #ececec;
 }
 /* Site navigation */
@@ -81,6 +83,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -96,7 +100,7 @@ body {
   display: block;
   align-content: center;
   margin-right: 50px;
-  padding: 5px 0;
+  
 }
 .sn-link:last-child {
   margin-right: 0;
@@ -117,6 +121,8 @@ body {
 .contacts-header .link {
   color: var(--primary-text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-header .link:hover,
 .contacts-header .link:focus {
@@ -126,7 +132,7 @@ body {
   display: block;
   align-items: flex-end;
   margin-right: 50px;
-  padding: 5px 0;
+  
 }
 .cont-link:last-child {
   margin-right: 0;
@@ -171,11 +177,13 @@ body {
 }
 
 .section {
-  padding-right: 215px;
-  padding-left: 215px;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
+}
+.section.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 /* ------------------------------------------ */
 /* Features */
@@ -183,12 +191,14 @@ body {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 }
 .features .paragraphe {
-  
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .features {
   display: flex;
@@ -199,7 +209,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  
   align-content: flex-start;
   margin-right: 30px;
   width: 270px;
@@ -208,12 +217,9 @@ body {
   margin-top: 10px;
 }
 .features-list:last-child {
-  width: 300px;
   margin-right: 0;
 }
-.section.ftrs {
-  padding-bottom: 0;
-}
+
 .section-title.hidden {
   position: absolute;
   width: 1px;
@@ -244,6 +250,9 @@ body {
 .photos-list:last-child {
   margin-right: 0;
 }
+.section.pht {
+  padding-top: 0;
+}
 /* -------------------------------------------- */
 /* Team */
 .team-list .title {
@@ -251,13 +260,13 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
+  
 }
 .team-list .paragraphe {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 10px;
-  margin-bottom: 30px;
+  
 }
 .team {
   background-color: var(--second-background-color);
@@ -273,6 +282,11 @@ body {
 }
 .person-card:last-child {
   margin-right: 0;
+}
+.person-name {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* Portfolio */
 /* Categories */
@@ -361,12 +375,11 @@ body {
 .button-list {
   display: flex;
   justify-content: center;
-}
-.button.ct {
-  margin-right: 8px;
   margin-bottom: 50px;
 }
-
+.button-list .button {
+  margin-right: 8px;
+}
 /* Footer */
 .page-footer {
   background-color: var(--hero-background-color);
@@ -387,7 +400,6 @@ body {
 .address {
   font-size: 14px;
   line-height: 1.71;
-  
 }
 .address .address-link {
   color: var(--second-text-color);
@@ -396,7 +408,7 @@ body {
   margin-bottom: 9px;
 }
 .ftr-link {
-  margin: 9px 0;
+  margin-bottom: 9px;
 }
 .ftr-link:last-child {
   margin-bottom: 0;
@@ -420,8 +432,8 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding-bottom: 61px;
-  padding-top: 61px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 /* list-type */
 .list,
@@ -433,7 +445,6 @@ body {
   list-style-type: none;
 }
 .container {
-  
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
