@@ -59,8 +59,8 @@ body {
 }
 .logo-hdr {
   color: var(--accent-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo.studio {
   color: var(--third-text-color);
@@ -100,7 +100,7 @@ body {
   display: block;
   align-content: center;
   margin-right: 50px;
-  
+  display: flex;
 }
 .sn-link:last-child {
   margin-right: 0;
@@ -123,6 +123,7 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
 }
 .contacts-header .link:hover,
 .contacts-header .link:focus {
@@ -377,12 +378,14 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-list .button {
+.button-list .btn-item {
   margin-right: 8px;
 }
 /* Footer */
 .page-footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* logo-footer */
 .logo-ftr {
@@ -432,8 +435,6 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 /* list-type */
 .list,
